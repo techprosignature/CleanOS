@@ -1,0 +1,410 @@
+/* Copyright 2020 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+/* This file is generated from:
+ *  ../../../../../../../home/chrome-bot/chrome_root/src/ui/chromeos/colors/cros_colors.json5
+ *  ../../../../../../../home/chrome-bot/chrome_root/src/ui/chromeos/colors/cros_palette.json5
+ */
+
+html:not(body) {
+  --cros-text-color-primary-rgb: var(--google-grey-900-rgb);
+  --cros-text-color-primary: rgb(var(--cros-text-color-primary-rgb));
+
+  --cros-text-color-secondary-rgb: var(--google-grey-700-rgb);
+  --cros-text-color-secondary: rgb(var(--cros-text-color-secondary-rgb));
+
+  --cros-text-color-alert-rgb: var(--google-red-600-rgb);
+  --cros-text-color-alert: rgb(var(--cros-text-color-alert-rgb));
+
+  --cros-text-color-warning-rgb: var(--google-yellow-600-rgb);
+  --cros-text-color-warning: rgb(var(--cros-text-color-warning-rgb));
+
+  --cros-text-color-positive-rgb: var(--google-green-600-rgb);
+  --cros-text-color-positive: rgb(var(--cros-text-color-positive-rgb));
+
+  --cros-bg-color-rgb: 255, 255, 255;
+  --cros-bg-color: rgb(var(--cros-bg-color-rgb));
+
+  --cros-icon-color-primary-rgb: var(--google-grey-700-rgb);
+  --cros-icon-color-primary: rgb(var(--cros-icon-color-primary-rgb));
+
+  --cros-icon-color-alert-rgb: var(--google-red-600-rgb);
+  --cros-icon-color-alert: rgb(var(--cros-icon-color-alert-rgb));
+
+  --cros-icon-color-warning-rgb: var(--google-yellow-600-rgb);
+  --cros-icon-color-warning: rgb(var(--cros-icon-color-warning-rgb));
+
+  --cros-icon-color-positive-rgb: var(--google-green-600-rgb);
+  --cros-icon-color-positive: rgb(var(--cros-icon-color-positive-rgb));
+
+  --cros-icon-color-prominent-rgb: var(--google-blue-600-rgb);
+  --cros-icon-color-prominent: rgb(var(--cros-icon-color-prominent-rgb));
+
+  --cros-icon-color-secondary-rgb: var(--google-grey-500-rgb);
+  --cros-icon-color-secondary: rgb(var(--cros-icon-color-secondary-rgb));
+
+  --cros-toolbar-bg-color-rgb: 255, 255, 255;
+  --cros-toolbar-bg-color: rgb(var(--cros-toolbar-bg-color-rgb));
+
+  --cros-toolbar-search-bg-color-rgb: var(--google-grey-100-rgb);
+  --cros-toolbar-search-bg-color: rgb(var(--cros-toolbar-search-bg-color-rgb));
+
+  --cros-menu-button-bg-color-active-rgb: var(--google-blue-50-rgb);
+  --cros-menu-button-bg-color-active: rgb(var(--cros-menu-button-bg-color-active-rgb));
+
+  --cros-menu-button-bg-color-hover-rgb: var(--google-grey-100-rgb);
+  --cros-menu-button-bg-color-hover: rgb(var(--cros-menu-button-bg-color-hover-rgb));
+
+  --cros-menu-button-outline-color-focused-rgb: var(--google-blue-600-rgb);
+  --cros-menu-button-outline-color-focused: rgb(var(--cros-menu-button-outline-color-focused-rgb));
+
+  --cros-menu-item-bg-color-focus-rgb: 0, 0, 0;
+  --cros-menu-item-bg-color-focus: rgba(var(--cros-menu-item-bg-color-focus-rgb), 0.06);
+
+  --cros-menu-item-ripple-color-rgb: 0, 0, 0;
+  --cros-menu-item-ripple-color: rgba(var(--cros-menu-item-ripple-color-rgb), 0.06);
+
+  --cros-toggle-color-rgb: var(--cros-icon-color-prominent-rgb);
+  --cros-toggle-color: rgb(var(--cros-toggle-color-rgb));
+
+  --cros-toggle-bg-color-inactive-rgb: var(--google-grey-400-rgb);
+  --cros-toggle-bg-color-inactive: rgb(var(--cros-toggle-bg-color-inactive-rgb));
+
+  --cros-toggle-button-color-inactive-rgb: 255, 255, 255;
+  --cros-toggle-button-color-inactive: rgb(var(--cros-toggle-button-color-inactive-rgb));
+
+  --cros-toggle-ripple-color-rgb: var(--cros-toggle-color-rgb);
+  --cros-toggle-ripple-color: rgba(var(--cros-toggle-ripple-color-rgb), 0.2);
+
+  --cros-toggle-ripple-color-inactive-rgb: var(--google-grey-600-rgb);
+  --cros-toggle-ripple-color-inactive: rgba(var(--cros-toggle-ripple-color-inactive-rgb), 0.15);
+
+  --cros-radio-button-color-rgb: var(--cros-icon-color-prominent-rgb);
+  --cros-radio-button-color: rgb(var(--cros-radio-button-color-rgb));
+
+  --cros-radio-button-ripple-color-rgb: var(--cros-radio-button-color-rgb);
+  --cros-radio-button-ripple-color: rgba(var(--cros-radio-button-ripple-color-rgb), 0.2);
+
+  --cros-radio-button-color-unchecked-rgb: var(--google-grey-700-rgb);
+  --cros-radio-button-color-unchecked: rgb(var(--cros-radio-button-color-unchecked-rgb));
+
+  --cros-radio-button-ripple-color-unchecked-rgb: var(--google-grey-600-rgb);
+  --cros-radio-button-ripple-color-unchecked: rgba(var(--cros-radio-button-ripple-color-unchecked-rgb), 0.15);
+
+  --cros-separator-color-rgb: 0, 0, 0;
+  --cros-separator-color: rgba(var(--cros-separator-color-rgb), 0.12);
+
+  --cros-link-color-rgb: var(--google-blue-700-rgb);
+  --cros-link-color: rgb(var(--cros-link-color-rgb));
+
+  --cros-button-background-color-primary-rgb: var(--cros-icon-color-prominent-rgb);
+  --cros-button-background-color-primary: rgb(var(--cros-button-background-color-primary-rgb));
+
+  --cros-button-label-color-primary-rgb: var(--google-grey-200-rgb);
+  --cros-button-label-color-primary: rgb(var(--cros-button-label-color-primary-rgb));
+
+  --cros-button-background-color-primary-hover-overlay-rgb: 255, 255, 255;
+  --cros-button-background-color-primary-hover-overlay: rgba(var(--cros-button-background-color-primary-hover-overlay-rgb), 0.08);
+
+  --cros-button-background-color-primary-disabled-rgb: var(--google-grey-100-rgb);
+  --cros-button-background-color-primary-disabled: rgb(var(--cros-button-background-color-primary-disabled-rgb));
+
+  --cros-button-label-color-primary-disabled-rgb: var(--google-grey-600-rgb);
+  --cros-button-label-color-primary-disabled: rgb(var(--cros-button-label-color-primary-disabled-rgb));
+
+  --cros-button-label-color-secondary-rgb: var(--cros-icon-color-prominent-rgb);
+  --cros-button-label-color-secondary: rgb(var(--cros-button-label-color-secondary-rgb));
+
+  --cros-button-stroke-color-secondary-rgb: var(--google-grey-300-rgb);
+  --cros-button-stroke-color-secondary: rgb(var(--cros-button-stroke-color-secondary-rgb));
+
+  --cros-button-background-color-secondary-hover-rgb: var(--cros-icon-color-prominent-rgb);
+  --cros-button-background-color-secondary-hover: rgba(var(--cros-button-background-color-secondary-hover-rgb), 0.04);
+
+  --cros-button-label-color-secondary-disabled-rgb: var(--google-grey-600-rgb);
+  --cros-button-label-color-secondary-disabled: rgb(var(--cros-button-label-color-secondary-disabled-rgb));
+
+  --cros-button-stroke-color-secondary-disabled-rgb: var(--google-grey-100-rgb);
+  --cros-button-stroke-color-secondary-disabled: rgb(var(--cros-button-stroke-color-secondary-disabled-rgb));
+
+  --cros-textfield-background-color-rgb: var(--google-grey-100-rgb);
+  --cros-textfield-background-color: rgb(var(--cros-textfield-background-color-rgb));
+
+  --cros-textfield-label-color-rgb: var(--google-grey-700-rgb);
+  --cros-textfield-label-color: rgb(var(--cros-textfield-label-color-rgb));
+
+  --cros-textfield-input-color-rgb: var(--google-grey-900-rgb);
+  --cros-textfield-input-color: rgb(var(--cros-textfield-input-color-rgb));
+
+  --cros-textfield-label-color-focus-rgb: var(--cros-icon-color-prominent-rgb);
+  --cros-textfield-label-color-focus: rgb(var(--cros-textfield-label-color-focus-rgb));
+
+  --cros-textfield-label-color-error-rgb: var(--google-red-600-rgb);
+  --cros-textfield-label-color-error: rgb(var(--cros-textfield-label-color-error-rgb));
+
+  --cros-textfield-background-color-disabled-rgb: var(--google-grey-100-rgb);
+  --cros-textfield-background-color-disabled: rgba(var(--cros-textfield-background-color-disabled-rgb), 0.38);
+
+  --cros-textfield-label-color-disabled-rgb: var(--google-grey-700-rgb);
+  --cros-textfield-label-color-disabled: rgba(var(--cros-textfield-label-color-disabled-rgb), 0.38);
+
+  --cros-textfield-input-color-disabled-rgb: var(--google-grey-900-rgb);
+  --cros-textfield-input-color-disabled: rgba(var(--cros-textfield-input-color-disabled-rgb), 0.38);
+
+  --cros-error-color-rgb: var(--google-red-700-rgb);
+  --cros-error-color: rgb(var(--cros-error-color-rgb));
+
+  --cros-success-color-rgb: var(--google-green-700-rgb);
+  --cros-success-color: rgb(var(--cros-success-color-rgb));
+
+  --cros-search-page-question-icon-color-rgb: var(--google-grey-600-rgb);
+  --cros-search-page-question-icon-color: rgb(var(--cros-search-page-question-icon-color-rgb));
+
+  --cros-app-management-permission-icon-color-rgb: var(--google-grey-600-rgb);
+  --cros-app-management-permission-icon-color: rgb(var(--cros-app-management-permission-icon-color-rgb));
+
+  --cros-user-icon-color-secondary-rgb: 210, 210, 212;
+  --cros-user-icon-color-secondary: rgb(var(--cros-user-icon-color-secondary-rgb));
+
+  --google-blue-50-rgb: 232, 240, 254;
+  --google-blue-50: rgb(var(--google-blue-50-rgb));
+
+  --google-blue-100-rgb: 210, 227, 252;
+  --google-blue-100: rgb(var(--google-blue-100-rgb));
+
+  --google-blue-200-rgb: 174, 203, 250;
+  --google-blue-200: rgb(var(--google-blue-200-rgb));
+
+  --google-blue-300-rgb: 138, 180, 248;
+  --google-blue-300: rgb(var(--google-blue-300-rgb));
+
+  --google-blue-400-rgb: 102, 157, 246;
+  --google-blue-400: rgb(var(--google-blue-400-rgb));
+
+  --google-blue-500-rgb: 66, 133, 244;
+  --google-blue-500: rgb(var(--google-blue-500-rgb));
+
+  --google-blue-600-rgb: 26, 115, 232;
+  --google-blue-600: rgb(var(--google-blue-600-rgb));
+
+  --google-blue-700-rgb: 25, 103, 210;
+  --google-blue-700: rgb(var(--google-blue-700-rgb));
+
+  --google-blue-800-rgb: 24, 90, 188;
+  --google-blue-800: rgb(var(--google-blue-800-rgb));
+
+  --google-blue-900-rgb: 23, 78, 166;
+  --google-blue-900: rgb(var(--google-blue-900-rgb));
+
+  --google-green-50-rgb: 230, 244, 234;
+  --google-green-50: rgb(var(--google-green-50-rgb));
+
+  --google-green-100-rgb: 206, 234, 214;
+  --google-green-100: rgb(var(--google-green-100-rgb));
+
+  --google-green-200-rgb: 168, 218, 181;
+  --google-green-200: rgb(var(--google-green-200-rgb));
+
+  --google-green-300-rgb: 129, 201, 149;
+  --google-green-300: rgb(var(--google-green-300-rgb));
+
+  --google-green-400-rgb: 91, 185, 116;
+  --google-green-400: rgb(var(--google-green-400-rgb));
+
+  --google-green-500-rgb: 52, 168, 83;
+  --google-green-500: rgb(var(--google-green-500-rgb));
+
+  --google-green-600-rgb: 30, 142, 62;
+  --google-green-600: rgb(var(--google-green-600-rgb));
+
+  --google-green-700-rgb: 24, 128, 56;
+  --google-green-700: rgb(var(--google-green-700-rgb));
+
+  --google-green-800-rgb: 19, 115, 51;
+  --google-green-800: rgb(var(--google-green-800-rgb));
+
+  --google-green-900-rgb: 13, 101, 45;
+  --google-green-900: rgb(var(--google-green-900-rgb));
+
+  --google-grey-50-rgb: 248, 249, 250;
+  --google-grey-50: rgb(var(--google-grey-50-rgb));
+
+  --google-grey-100-rgb: 241, 243, 244;
+  --google-grey-100: rgb(var(--google-grey-100-rgb));
+
+  --google-grey-200-rgb: 232, 234, 237;
+  --google-grey-200: rgb(var(--google-grey-200-rgb));
+
+  --google-grey-300-rgb: 218, 220, 224;
+  --google-grey-300: rgb(var(--google-grey-300-rgb));
+
+  --google-grey-400-rgb: 189, 193, 198;
+  --google-grey-400: rgb(var(--google-grey-400-rgb));
+
+  --google-grey-500-rgb: 154, 160, 166;
+  --google-grey-500: rgb(var(--google-grey-500-rgb));
+
+  --google-grey-600-rgb: 128, 134, 139;
+  --google-grey-600: rgb(var(--google-grey-600-rgb));
+
+  --google-grey-700-rgb: 95, 99, 104;
+  --google-grey-700: rgb(var(--google-grey-700-rgb));
+
+  --google-grey-800-rgb: 60, 64, 67;
+  --google-grey-800: rgb(var(--google-grey-800-rgb));
+
+  --google-grey-900-rgb: 32, 33, 36;
+  --google-grey-900: rgb(var(--google-grey-900-rgb));
+
+  --google-red-50-rgb: 252, 232, 230;
+  --google-red-50: rgb(var(--google-red-50-rgb));
+
+  --google-red-100-rgb: 250, 210, 207;
+  --google-red-100: rgb(var(--google-red-100-rgb));
+
+  --google-red-200-rgb: 246, 174, 169;
+  --google-red-200: rgb(var(--google-red-200-rgb));
+
+  --google-red-300-rgb: 242, 139, 130;
+  --google-red-300: rgb(var(--google-red-300-rgb));
+
+  --google-red-400-rgb: 238, 103, 92;
+  --google-red-400: rgb(var(--google-red-400-rgb));
+
+  --google-red-500-rgb: 234, 67, 53;
+  --google-red-500: rgb(var(--google-red-500-rgb));
+
+  --google-red-600-rgb: 217, 48, 37;
+  --google-red-600: rgb(var(--google-red-600-rgb));
+
+  --google-red-700-rgb: 197, 34, 31;
+  --google-red-700: rgb(var(--google-red-700-rgb));
+
+  --google-red-800-rgb: 179, 20, 18;
+  --google-red-800: rgb(var(--google-red-800-rgb));
+
+  --google-red-900-rgb: 165, 14, 14;
+  --google-red-900: rgb(var(--google-red-900-rgb));
+
+  --google-yellow-50-rgb: 254, 247, 224;
+  --google-yellow-50: rgb(var(--google-yellow-50-rgb));
+
+  --google-yellow-100-rgb: 254, 239, 195;
+  --google-yellow-100: rgb(var(--google-yellow-100-rgb));
+
+  --google-yellow-200-rgb: 253, 226, 147;
+  --google-yellow-200: rgb(var(--google-yellow-200-rgb));
+
+  --google-yellow-300-rgb: 253, 214, 99;
+  --google-yellow-300: rgb(var(--google-yellow-300-rgb));
+
+  --google-yellow-400-rgb: 252, 201, 52;
+  --google-yellow-400: rgb(var(--google-yellow-400-rgb));
+
+  --google-yellow-500-rgb: 251, 188, 4;
+  --google-yellow-500: rgb(var(--google-yellow-500-rgb));
+
+  --google-yellow-600-rgb: 249, 171, 0;
+  --google-yellow-600: rgb(var(--google-yellow-600-rgb));
+
+  --google-yellow-700-rgb: 242, 153, 0;
+  --google-yellow-700: rgb(var(--google-yellow-700-rgb));
+
+  --google-yellow-800-rgb: 234, 134, 0;
+  --google-yellow-800: rgb(var(--google-yellow-800-rgb));
+
+  --google-yellow-900-rgb: 227, 116, 0;
+  --google-yellow-900: rgb(var(--google-yellow-900-rgb));
+
+  --cros-disabled-opacity: 0.38;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(body) {
+    --cros-text-color-primary-rgb: var(--google-grey-200-rgb);
+    --cros-text-color-primary: rgb(var(--cros-text-color-primary-rgb));
+
+    --cros-text-color-secondary-rgb: var(--google-grey-500-rgb);
+    --cros-text-color-secondary: rgb(var(--cros-text-color-secondary-rgb));
+
+    --cros-text-color-alert-rgb: var(--google-red-300-rgb);
+    --cros-text-color-alert: rgb(var(--cros-text-color-alert-rgb));
+
+    --cros-text-color-warning-rgb: var(--google-yellow-300-rgb);
+    --cros-text-color-warning: rgb(var(--cros-text-color-warning-rgb));
+
+    --cros-text-color-positive-rgb: var(--google-green-300-rgb);
+    --cros-text-color-positive: rgb(var(--cros-text-color-positive-rgb));
+
+    --cros-bg-color-rgb: var(--google-grey-900-rgb);
+    --cros-bg-color: rgb(var(--cros-bg-color-rgb));
+
+    --cros-icon-color-primary-rgb: var(--google-grey-200-rgb);
+    --cros-icon-color-primary: rgb(var(--cros-icon-color-primary-rgb));
+
+    --cros-icon-color-alert-rgb: var(--google-red-300-rgb);
+    --cros-icon-color-alert: rgb(var(--cros-icon-color-alert-rgb));
+
+    --cros-icon-color-warning-rgb: var(--google-yellow-300-rgb);
+    --cros-icon-color-warning: rgb(var(--cros-icon-color-warning-rgb));
+
+    --cros-icon-color-positive-rgb: var(--google-green-300-rgb);
+    --cros-icon-color-positive: rgb(var(--cros-icon-color-positive-rgb));
+
+    --cros-icon-color-prominent-rgb: var(--google-blue-300-rgb);
+    --cros-icon-color-prominent: rgb(var(--cros-icon-color-prominent-rgb));
+
+    --cros-icon-color-secondary-rgb: var(--google-grey-500-rgb);
+    --cros-icon-color-secondary: rgb(var(--cros-icon-color-secondary-rgb));
+
+    --cros-menu-item-bg-color-focus-rgb: 255, 255, 255;
+    --cros-menu-item-bg-color-focus: rgba(var(--cros-menu-item-bg-color-focus-rgb), 0.08);
+
+    --cros-menu-item-ripple-color-rgb: 255, 255, 255;
+    --cros-menu-item-ripple-color: rgba(var(--cros-menu-item-ripple-color-rgb), 0.08);
+
+    --cros-button-label-color-primary-rgb: var(--google-grey-900-rgb);
+    --cros-button-label-color-primary: rgb(var(--cros-button-label-color-primary-rgb));
+
+    --cros-button-background-color-primary-hover-overlay-rgb: 0, 0, 0;
+    --cros-button-background-color-primary-hover-overlay: rgba(var(--cros-button-background-color-primary-hover-overlay-rgb), 0.08);
+
+    --cros-button-background-color-primary-disabled-rgb: var(--google-grey-800-rgb);
+    --cros-button-background-color-primary-disabled: rgb(var(--cros-button-background-color-primary-disabled-rgb));
+
+    --cros-button-label-color-primary-disabled-rgb: var(--google-grey-500-rgb);
+    --cros-button-label-color-primary-disabled: rgb(var(--cros-button-label-color-primary-disabled-rgb));
+
+    --cros-button-stroke-color-secondary-rgb: var(--google-grey-700-rgb);
+    --cros-button-stroke-color-secondary: rgb(var(--cros-button-stroke-color-secondary-rgb));
+
+    --cros-button-label-color-secondary-disabled-rgb: var(--google-grey-500-rgb);
+    --cros-button-label-color-secondary-disabled: rgb(var(--cros-button-label-color-secondary-disabled-rgb));
+
+    --cros-button-stroke-color-secondary-disabled-rgb: var(--google-grey-800-rgb);
+    --cros-button-stroke-color-secondary-disabled: rgb(var(--cros-button-stroke-color-secondary-disabled-rgb));
+
+    --cros-textfield-background-color-rgb: 0, 0, 0;
+    --cros-textfield-background-color: rgba(var(--cros-textfield-background-color-rgb), 0.3);
+
+    --cros-textfield-label-color-rgb: 255, 255, 255;
+    --cros-textfield-label-color: rgba(var(--cros-textfield-label-color-rgb), 0.6);
+
+    --cros-textfield-input-color-rgb: 255, 255, 255;
+    --cros-textfield-input-color: rgba(var(--cros-textfield-input-color-rgb), 0.87);
+
+    --cros-textfield-label-color-error-rgb: var(--google-red-300-rgb);
+    --cros-textfield-label-color-error: rgb(var(--cros-textfield-label-color-error-rgb));
+
+    --cros-textfield-background-color-disabled-rgb: 0, 0, 0;
+    --cros-textfield-background-color-disabled: rgba(var(--cros-textfield-background-color-disabled-rgb), 0.11);
+
+    --cros-textfield-label-color-disabled-rgb: 0, 0, 0;
+    --cros-textfield-label-color-disabled: rgba(var(--cros-textfield-label-color-disabled-rgb), 0.23);
+
+    --cros-textfield-input-color-disabled-rgb: 255, 255, 255;
+    --cros-textfield-input-color-disabled: rgba(var(--cros-textfield-input-color-disabled-rgb), 0.33);
+
+  }
+}
