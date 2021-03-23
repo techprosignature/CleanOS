@@ -1,0 +1,114 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    height: 100%;
+    background: url(../Images/IMG_3793.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Shelf */
+#shelf{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0005;
+    backdrop-filter: blur(20px);
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.full{
+    border-top-left-radius: 0 !important ;
+    border-top-right-radius: 0!important;
+}
+/* Applications */
+#applications{
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.application{
+    height: 45px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.application:active{
+    background-color: #fff6;
+}
+.application img{
+    height: 36px;
+}
+/* Status bar */
+#statusbar{
+    margin: 7px;
+    float: right;
+    background-color: #c6c6c61f;
+    height: 36px;
+    width: fit-content;
+    border-radius: 18px;
+    cursor: default;
+    color: white;
+}
+#time{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    float: right;
+}
+#Battery{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../Images/Battery.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 11px;
+}
+#Wifi{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 6px;
+    background: url("../Images/Wifi.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* Launcher */
+#launcher{
+    margin: 7px;
+    float: left;
+    background-color: #c6c6c61f;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+}
+#launcher div{
+    height: 16px;
+    width: 16px;
+    margin: 10px;
+    background: url("../Images/Launcher.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* Window */
+.window{
+    width: 100%;
+    height: Calc(100% - 50px);
+    border: none;
+}
+iframe{
+    border: none;
+}
