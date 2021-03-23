@@ -1,0 +1,195 @@
+<!doctype html>
+<html><head>
+  <title>Text</title>
+  <link href="third_party/CodeMirror/lib/codemirror.css" rel="stylesheet">
+  <link href="third_party/material-components-web/material-components-web.min.css" rel="stylesheet">
+  <link href="third_party/material-design-icons/iconfont/material-icons.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <link href="css/print.css" rel="stylesheet" media="print">
+  <link href="css/theme-default.css" rel="stylesheet">
+  <link href="css/theme-dark.css" rel="stylesheet">
+  <link href="css/theme-light.css" rel="stylesheet">
+</head>
+<body i18n-values="aria-label:screenReaderModeHelp" aria-label="For a more optimized screen reader experience turn on screen reader mode from the settings menu." theme="default">
+  <div id="window-container">
+    <div id="sidebar" style="width: 220px; border-right-width: 2px;">
+      <div id="sidebar-resizer"></div>
+      <div id="file-tabs-menu">
+        <h1>Text</h1>
+
+        <hr>
+
+        <ul id="file-menu">
+          <li id="file-menu-new"><div i18n-content="fileMenuNew">New</div></li>
+          <li id="file-menu-open"><div i18n-content="fileMenuOpen">Open</div></li>
+          <li id="file-menu-save"><div i18n-content="fileMenuSave">Save</div></li>
+          <li id="file-menu-saveas"><div i18n-content="fileMenuSaveas">Save as</div></li>
+        </ul>
+
+        <hr>
+
+        <div id="tabs-list-container">
+          <ul id="tabs-list"><li draggable="true" id="tab1" class="active"><div class="filename">Untitled 1</div><button title="Close file" class="close mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">close</button></li></ul>
+        </div>
+
+        <hr>
+        <ul class="settings-switch-ul">
+          <li id="open-settings"><div i18n-content="menuSettings">Settings</div></li>
+        </ul>
+      </div>
+      <div id="settings-menu">
+        <h1 i18n-content="menuSettings">Settings</h1>
+        <hr>
+        <div id="settings-container">
+          <ul id="settings-list">
+            <li>
+              <label for="setting-fontsize" i18n-content="fontsizeSetting">Font size</label>
+              <input type="text" id="setting-fontsize" size="1" maxlength="2" pattern="\d\d?" value="14" i18n-values="title:fontsizeTooltip" title="Set with Ctrl- and Ctrl+">
+            </li>
+            <li>
+              <label for="setting-spacestab" i18n-content="spacestabSetting">Tabs to spaces</label>
+              <div class="mdc-switch mdc-switch--checked" id="setting-spacestab-switch">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <div class="mdc-switch__thumb">
+                    <input type="checkbox" id="setting-spacestab" class="mdc-switch__native-control" role="switch" checked="">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <label for="setting-tabsize" i18n-content="tabsizeSetting">Tab size</label>
+              <input type="text" id="setting-tabsize" size="1" maxlength="2" pattern="\d\d?" value="8">
+            </li>
+            <li>
+              <label for="setting-wraplines" i18n-content="wraplinesSetting">Wrap lines</label>
+              <div class="mdc-switch mdc-switch--checked" id="setting-wraplines-switch">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <div class="mdc-switch__thumb">
+                    <input type="checkbox" id="setting-wraplines" class="mdc-switch__native-control" role="switch" checked="">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <label for="setting-linenumbers" i18n-content="linenumbersSetting">Show line numbers</label>
+              <div class="mdc-switch mdc-switch--checked" id="setting-linenumbers-switch">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <div class="mdc-switch__thumb">
+                    <input type="checkbox" id="setting-linenumbers" class="mdc-switch__native-control" role="switch" checked="">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <label for="setting-smartindent" i18n-content="smartindentSetting">Smart indent</label>
+              <div class="mdc-switch mdc-switch--checked" id="setting-smartindent-switch">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <div class="mdc-switch__thumb">
+                    <input type="checkbox" id="setting-smartindent" class="mdc-switch__native-control" role="switch" checked="">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <label for="setting-alwaysontop" i18n-content="alwaysOnTopSetting">Always on top</label>
+              <div class="mdc-switch" id="setting-alwaysontop-switch">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <div class="mdc-switch__thumb">
+                    <input type="checkbox" id="setting-alwaysontop" class="mdc-switch__native-control" role="switch">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <label for="setting-screenreadermode" i18n-content="screenReaderModeSetting">Screen reader mode</label>
+              <div class="mdc-switch" id="setting-screenreadermode-switch">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <div class="mdc-switch__thumb">
+                    <input type="checkbox" id="setting-screenreadermode" class="mdc-switch__native-control" role="switch">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div class="group">
+              <h2 i18n-content="themeSetting">Themes</h2>
+              <div class="mdc-form-field">
+                <label for="setting-theme-default" i18n-content="DefaultThemeOption">Default</label>
+                <div class="mdc-radio mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <input class="mdc-radio__native-control" type="radio" id="setting-theme-default" name="setting-theme" value="default" checked="">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-form-field">
+                <label for="setting-theme-light" i18n-content="LightThemeOption">Light</label>
+                <div class="mdc-radio mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <input class="mdc-radio__native-control" type="radio" id="setting-theme-light" name="setting-theme" value="light">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-form-field">
+                <label for="setting-theme-dark" i18n-content="DarkThemeOption">Dark</label>
+                <div class="mdc-radio mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+                  <input class="mdc-radio__native-control" type="radio" id="setting-theme-dark" name="setting-theme" value="dark">
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <hr>
+        <ul class="settings-switch-ul">
+          <li id="close-settings"><div i18n-content="closeSettings">Back</div></li>
+        </ul>
+      </div>
+    </div>
+    <div id="main-container">
+      <header>
+        <button class="mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" id="toggle-sidebar" i18n-values="title:openSidebarButton" title="Close sidebar" style="--mdc-ripple-fg-size:28.8px; --mdc-ripple-fg-scale:1.66667; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">menu</button>
+        <div class="search-container">
+          <div id="search-input-container">
+            <input type="search" id="search-input" i18n-values="placeholder:searchPlaceholder" placeholder="Find...">
+            <span id="search-counting"></span>
+          </div>
+          <button class="search-navigation-button mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" id="search-previous-button" i18n-values="title:searchPreviousButton" title="Previous" style="--mdc-ripple-fg-size:18px; --mdc-ripple-fg-scale:1.66667; --mdc-ripple-left:-9px; --mdc-ripple-top:6px;">expand_less</button>
+          <button class="search-navigation-button mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" id="search-next-button" i18n-values="title:searchNextButton" title="Next" style="--mdc-ripple-fg-size:18px; --mdc-ripple-fg-scale:1.66667; --mdc-ripple-left:-9px; --mdc-ripple-top:6px;">expand_more</button>
+        </div>
+        <div id="title-filename" i18n-content="errorTitle" title="~/MyFiles/Downloads/TechPro Services/About.html" class="">Untitled 1</div>
+        <button class="mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" id="window-minimize" i18n-values="title:minimizeButton" title="Minimize" style="--mdc-ripple-fg-size:28.8px; --mdc-ripple-fg-scale:1.66667; --mdc-ripple-left:10px; --mdc-ripple-top:10px;" onclick="window.parent.postMessage({ message: 'Window', value: 'Minimize' }, '*');">remove</button>
+        <button class="mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" id="window-maximize" i18n-values="title:maximizeButton" title="Maximize" style="--mdc-ripple-fg-size:28.8px; --mdc-ripple-fg-scale:1.66667; --mdc-ripple-left:10px; --mdc-ripple-top:10px;" onclick="window.parent.postMessage({ message: 'Window', value: 'Resize' }, '*');">crop_square</button>
+        <button class="mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" id="window-close" i18n-values="title:closeButton" title="Quit" style="--mdc-ripple-fg-size:28.8px; --mdc-ripple-fg-scale:1.66667; --mdc-ripple-left:10px; --mdc-ripple-top:10px;" onclick="window.parent.postMessage({ message: 'Window', value: 'Close' }, '*');">close</button>
+      </header>
+
+      <div id="editor"><div class="CodeMirror cm-s-default CodeMirror-wrap" style="height: auto; font-size: 14px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="width: 18px; pointer-events: none; bottom: 0px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: 0px; border-right-width: 30px; min-height: 24px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 16px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><textarea cm-text="" style="width: 100%">&ZeroWidthSpace;</textarea></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 24px;"></div><div class="CodeMirror-gutters" style="height: 54px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></div>
+    </div> <!-- main-container -->
+  </div> <!-- window-container -->
+
+  <div id="dialog-container">
+    <div class="dialog-window">
+      <div class="dialog-text"></div>
+      <div class="dialog-buttons"></div>
+    </div>
+  </div>
+
+  <!-- Already minified javascript libraries. Not included in compilation unit. -->
+  <script src="third_party/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script src="third_party/material-components-web/material-components-web.min.js" type="text/javascript"></script>
+  <script src="js/all.js" type="text/javascript"></script>
+
+
+
+</body></html>
