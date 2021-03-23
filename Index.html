@@ -1,0 +1,34 @@
+<!doctype html><html>
+    <head>
+        <title>CleanOS</title>
+        <link rel="icon" href="Images/Chrome.png">
+        <link rel="stylesheet" href="Styles/main.css">
+    </head>
+    <body>
+        <div id="shelf">
+            <div id="launcher" title="Launcher">
+                <div id="launcher-icon"></div>
+            </div>
+            <div id="applications">
+                <div class="application" title="Files" onclick="NWindow('Apps/Files/Index.html')">
+                    <img src="Images/Files.png" />
+                </div>
+                <div class="application" title="Google Chrome" onclick="NWindow('Apps/TechPro Services/Index.html')">
+                    <img src="Images/Chrome.png" />
+                </div>
+                <div class="application" title="Text" onclick="NWindow('Apps/Text/Index.html')">
+                    <img src="Images/Text.png" />
+                </div>
+                <div class="application" title="Desmos| Graphing Calculator" onclick="NWindow('https://desmos.com/calculator')">
+                    <img src="Images/Desmos.png" />
+                </div>
+            </div>
+            <div id="statusbar">
+                <div id="Wifi" title="Connected, Strong signal"></div>
+                <div id="Battery" title="100% - 9:02 left"></div>
+                <span id="time"></span>
+            </div>
+        </div>
+        <script src="Scripts/main.js"></script>
+    </body>
+</html>
